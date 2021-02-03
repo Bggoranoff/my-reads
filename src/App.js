@@ -26,7 +26,7 @@ function App() {
   });
 
   const updateBook = (book, shelf) => {
-    fetch("https://reactnd-books-api.udacity.com/books/${book.id}", {
+    fetch(`https://reactnd-books-api.udacity.com/books/${book.id}`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
