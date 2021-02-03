@@ -1,4 +1,4 @@
-import './index.module.css';
+import './styles.css';
 
 function AddBook(props) {
     let handleClick = () => {
