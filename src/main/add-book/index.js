@@ -1,9 +1,10 @@
 import './styles.css';
 
 function AddBook(props) {
-    let handleClick = () => {
+    const handleClick = () => {
         props.history.push('/search');
     }
+
     return (
         <div className='open-search'>
             <button onClick={handleClick}>Add book</button>

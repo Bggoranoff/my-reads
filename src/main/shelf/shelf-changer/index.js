@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './styles.css';
 
 function ShelfChanger(props) {
-    let [shelf, setShelf] = useState(props.book.shelf ? props.book.shelf : 'move');
-    let updateBook = event => {
+    const [shelf, setShelf] = useState(props.book.shelf ? props.book.shelf : 'move');
+    const updateBook = event => {
         if(shelf !== event.target.value) {
             setShelf(event.target.value);
             props.updateBook(props.book, event.target.value);

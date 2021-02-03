@@ -3,8 +3,9 @@ import SearchBar from './bar';
 import SearchResults from './results';
 
 function Search(props) {
-    let [results, setResults] = useState([]);
-    let handleChange = event => {
+    const [results, setResults] = useState([]);
+
+    const handleChange = event => {
         fetch("https://reactnd-books-api.udacity.com/search", {
             method: 'POST',
             headers: {
