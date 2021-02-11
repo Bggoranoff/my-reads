@@ -22,7 +22,7 @@ function App() {
     })
       .then(res => res.json())
       .then(data => data.books)
-      .then(books => setBooks([...books.filter(book => book.shelf !== 'none')]));
+      .then(b => setBooks([...b.filter(book => book.shelf !== 'none')]));
   });
 
   const updateBook = (book, shelf) => {
